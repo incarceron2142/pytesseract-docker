@@ -1,0 +1,6 @@
+FROM 3.7-slim
+
+RUN apt-get update \
+  && apt-get install -y tesseract-ocr
+  
+RUN pip3 install tensorflow-cpu opencv-python pytesseract
