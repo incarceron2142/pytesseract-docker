@@ -3,4 +3,4 @@ FROM 3.7-slim
 RUN apt-get update \
   && apt-get install -y tesseract-ocr
   
-RUN pip3 install tensorflow-gpu opencv-python pytesseract
+RUN pip3 install tensorflow-gpu==1.13.1 opencv-python pytesseract
